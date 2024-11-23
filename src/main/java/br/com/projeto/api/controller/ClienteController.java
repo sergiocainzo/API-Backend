@@ -1,6 +1,7 @@
 package br.com.projeto.api.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import br.com.projeto.api.repository.ClienteRepository;
 
 @RestController
 @RequestMapping
+@CrossOrigin(origins = "*")
 public class ClienteController {
     
     @Autowired
