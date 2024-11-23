@@ -23,9 +23,9 @@ public class ClienteController {
         return acao.save(c);
     }
 
-    @GetMapping("/helloworld")
-    public String teste(){
-        return "Hello World!!!";
+    @GetMapping("/")
+    public Iterable<Cliente> selecionar(){
+        return acao.findAll();
     }
 
 
